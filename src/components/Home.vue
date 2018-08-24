@@ -36,6 +36,11 @@
 export default {
   data () {
     return {
+      computed: {
+        meetups () {
+          return this.$store.getters.featuredMeetups
+        }
+      },
       meetups: [
         {
           imageUrl:
@@ -47,7 +52,7 @@ export default {
           imageUrl:
             'https://upload.wikimedia.org/wikipedia/commons/7/7a/Paris_-_Blick_vom_gro%C3%9Fen_Triumphbogen.jpg',
           id: 'asdfjjasdasdfasdf',
-          title: 'Meetup in New York'
+          title: 'Meetup in Paris'
         }
       ]
     }
