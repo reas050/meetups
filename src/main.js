@@ -3,6 +3,7 @@ import colors from 'vuetify/es5/util/colors'
 
 import Vue from 'vue'
 import App from './App'
+import * as firebase from 'firebase'
 import router from './router'
 import Vuetify from 'vuetify'
 import { store } from './store'
@@ -30,5 +31,9 @@ new Vue({
   el: '#app',
   router,
   store,
-  render: h => h(App)
+  render: h => h(App),
+  created () {
+    firebase.initializeApp({
+    })
+  }
 })
