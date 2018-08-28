@@ -34,6 +34,8 @@ new Vue({
   render: h => h(App),
   created () {
     firebase.initializeApp({
+      /* Put your firebase datails below to get it working */
+      
     })
   }
 })
