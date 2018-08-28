@@ -7,6 +7,7 @@ import router from './router'
 import Vuetify from 'vuetify'
 import { store } from './store'
 import 'vuetify/dist/vuetify.min.css'
+import DateFilter from './filters/date'
 
 Vue.use(Vuetify, {
   theme: {
@@ -21,6 +22,8 @@ Vue.use(Vuetify, {
 })
 
 Vue.config.productionTip = false
+
+Vue.filter('date', DateFilter)
 
 /* eslint-disable no-new */
 new Vue({

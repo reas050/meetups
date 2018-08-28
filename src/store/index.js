@@ -11,7 +11,7 @@ export const store = new Vuex.Store({
           'https://www.fox.nl/images/noord-amerika/verenigde-staten/algemeen/new-york/us_nyc_timessquare4_b.jpg?d=1024-0&hd=1',
         id: 'asdfjjasd',
         title: 'Meetup in New York',
-        date: '2018/10/17',
+        date: new Date(),
         location: 'New York',
         description: 'New York, New York'
       },
@@ -20,7 +20,7 @@ export const store = new Vuex.Store({
           'https://upload.wikimedia.org/wikipedia/commons/7/7a/Paris_-_Blick_vom_gro%C3%9Fen_Triumphbogen.jpg',
         id: 'asdfjjasdasdfasdf',
         title: 'Meetup in Paris',
-        date: '2018/10/19',
+        date: new Date(),
         location: 'Paris',
         description: 'It\'s Paris !'
       }
